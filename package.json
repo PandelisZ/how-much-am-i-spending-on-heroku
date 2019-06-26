@@ -1,6 +1,6 @@
 {
   "name": "how-much-am-i-spending-on-heroku",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "How much am I spending on heroku?",
   "main": "index.js",
   "scripts": {
