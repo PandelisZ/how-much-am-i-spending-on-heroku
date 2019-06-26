@@ -85,7 +85,6 @@ const allApps = async () => {
 
             if (app.dynos && app.addons) {
                 const dynoCost = app.dynos.reduce((cost, dyno) => {
-                    console.log(dyno.size)
                     if (dyno.type === 'web') {
                         cost += priceMap[dyno.size]
                     }
@@ -102,7 +101,6 @@ const allApps = async () => {
                 totalCost += totalApp
 
                 const row = [app.name, dynoCost, addonCost, totalApp]
-                console.log(row)
                 table.push(row)
             }
         })
